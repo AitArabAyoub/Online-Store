@@ -9,7 +9,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
+import Banner1 from '../img/banner_Hero1.jpg'
+import Banner2 from '../img/banner_Hero2.jpg'
+import Banner3 from '../img/banner_Hero3.jpg'
 export function Banner() {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: false }),
@@ -17,17 +19,17 @@ export function Banner() {
 
   const imgs = [
     {
-      link: "/src/img/banner_Hero1.jpg",
+      link: Banner1,
       title: "Outwear Picks",
       desc: "Stock up on sportswear and limited edition collections",
     },
     {
-      link: "/src/img/banner_Hero2.jpg",
+      link: Banner2,
       title: "Best For Men",
       desc: "Discover premium styles for men",
     },
     {
-      link: "/src/img/banner_Hero3.jpg",
+      link: Banner3,
       title: "Seasonal Offers",
       desc: "Don’t miss our exclusive deals",
     },
