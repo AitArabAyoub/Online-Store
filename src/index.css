@@ -8,6 +8,15 @@
 .container{
     @apply w-[90%] mx-auto;
 }
+.btn-blue{
+    @apply bg-blue-500 p-2 rounded-md text-white w-fit;
+}
+.badge-blue{
+    @apply p-1 bg-[#0090f0] text-white rounded-md;
+}
+a.active{
+    @apply text-black font-bold; 
+}
 body{
     font-family: "Inter", sans-serif;
 }
@@ -20,6 +29,7 @@ p{
 input,select,textarea{
     @apply p-2 rounded-md; 
 }
+
 
 @theme inline {
     --font-heading: var(--font-sans);
@@ -133,14 +143,3 @@ input,select,textarea{
     --sidebar-ring: oklch(0.556 0 0);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-    }
-  body {
-    @apply bg-background text-foreground;
-    }
-  html {
-    @apply font-sans;
-    }
-}
