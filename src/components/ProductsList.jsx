@@ -8,10 +8,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useQuery } from "@tanstack/react-query";
-import { Rating } from "react-simple-star-rating";
-import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { addItem } from "@/redux/cartSlice";
+
 import Product from "./Product";
 
 export const getCatProds = async (slug) => {
@@ -25,7 +22,7 @@ function ProductsList({ slug }) {
         queryKey: ["cat", slug],
         queryFn: () => getCatProds(slug),
     });
-    const dispatch = useDispatch()
+    
     if (isLoading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
 

@@ -2,7 +2,11 @@ import React from "react";
 import { FaCartPlus, FaEye } from "react-icons/fa";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { addItem } from "@/redux/cartSlice";
+import { useDispatch } from "react-redux";
+
 function Product({ el }) {
+  const dispatch = useDispatch()
   return (
     <Card className="relative group overflow-hidden rounded-xl border transition duration-300 ease-in-out hover:shadow-2xl hover:border-[#0090f0]">
       <CardContent className="p-0">
